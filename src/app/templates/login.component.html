@@ -1,0 +1,14 @@
+<div class ="login__container">
+    <span class = "login__error">{{errorMessage}}</span>
+    <div class="form-group">
+      <span class="login__container__left">Username</span>
+      <input type ="text" [(ngModel)]="userName" name = "Username" class="login__container__right form-control" placeholder="Username">
+    </div>
+    <div class="form-group">
+      <span class="login__container__left">Password</span>
+      <input type ="password" [(ngModel)]="password" name = "password" class="login__container__right form-control" placeholder="*********" />
+    </div>
+    <input type = "button" name="Sign in" class = "btn btnBlue col-md-12 login__container__submit" (click)="onSubmit()" value ="Sign in" />
+</div>
+
+

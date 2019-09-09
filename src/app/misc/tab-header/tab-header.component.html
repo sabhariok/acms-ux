@@ -1,0 +1,55 @@
+<mat-card class="border border-secondary w-50">
+
+  <mat-card-content>
+    <mat-form-field appearance="outline">
+        <mat-label>Proposed Id</mat-label>
+      <input matInput placeholder="Proposed Id" value="1801">
+    </mat-form-field>
+    <mat-form-field class="w-50" appearance="outline">
+        <mat-label>More Info</mat-label>
+      <textarea matInput placeholder="More Info" rows="1" cols="50" class="w-100">Andrew,GREGORY. 4119 Final VA1 01/09/2017</textarea>
+    </mat-form-field>
+    <br />
+    <mat-form-field appearance="outline">
+        <mat-label>Current Id</mat-label>
+      <mat-select placeholder="Current Id" [(value)]="selected">
+        <mat-option value="1800">1800</mat-option>
+        <mat-option value="1801">1801</mat-option>
+        <mat-option value="1799">1799</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="w-50" appearance="outline">
+        <mat-label>More Info</mat-label>
+      <textarea matInput placeholder="More Info">Andrew,GREGORY. 4119 Final VA1 01/09/2017</textarea>
+    </mat-form-field>
+  </mat-card-content>
+</mat-card>
+
+<!-- 
+<div class="example-container">
+    <mat-form-field>
+      <input matInput placeholder="Input">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <textarea matInput placeholder="Textarea"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-select placeholder="Select">
+        <mat-option value="option">Option</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+   -->
+<!-- <div class="container-fluid pt-3">
+    <div class="row">
+      <div class="col-sm border border-primary">Proposed Id:1801</div>
+      <div class="col-sm border border-primary">Andrew,GREGORY. 4119 Final VA1 01/09/2017</div>      
+    </div>
+    <div class="row">
+        <div class="col-sm border border-primary">Current Id:1800</div>
+        <div class="col-sm border border-primary">Andrew,GREGORY. 4119 Final VA1 01/09/2017</div>      
+      </div>
+  </div>
+   -->

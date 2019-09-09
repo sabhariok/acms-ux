@@ -1,0 +1,189 @@
+<mat-accordion>
+  <mat-expansion-panel class="border border-secondary" [expanded]='true'>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Personal data
+      </mat-panel-title>
+      <mat-panel-description>
+        Andrew,GREGORY
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-form-field>
+      <input matInput placeholder="Account" value="10455645">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="District" value="VA1">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Zone Manager" value="John Felch">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Division Manager" value="John Stweart">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="" value="(703)-451-0632">
+    </mat-form-field>
+    <br />
+  </mat-expansion-panel>
+  <br />
+  <mat-expansion-panel class="border border-secondary" [expanded]='true'>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        More Info
+      </mat-panel-title>
+      <mat-panel-description>
+        Andrew,GREGORY
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-form-field>
+      <input matInput placeholder="Agent" value="4546">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Effective Date" [value]="date.value">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Created By" value="John Felch">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="On" value="04/08/2018">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Modified By" value="HWalence">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="on" value="16/08/2018">
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <input matInput placeholder="Account" value="John Stweart">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Duration (Weeks)" value="John Stweart">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Agent Type" value="John Stweart">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-select placeholder="Agent Type" [(value)]="agtType">
+        <mat-option value="1">Combination Single</mat-option>
+        <mat-option value="2">Combination Single 1</mat-option>
+        <mat-option value="3">Combination Single 2</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Expiration Date" value="04/08/2019">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Receipt # for Bond Deposit" value="">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Market" [(value)]="mktType">
+        <mat-option value="1">Inner Core Market</mat-option>
+        <mat-option value="2">Inner Core Market</mat-option>
+        <mat-option value="3">Inner Core Market</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker1" placeholder="Original Contract Date" [value]="date.value">
+      <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+      <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Agent Status" [(value)]="agtStatus">
+        <mat-option value="1">Full Share</mat-option>
+        <mat-option value="2">Full Share</mat-option>
+        <mat-option value="3">Full Share</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker2" placeholder="Agreement Date" [value]="date.value">
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Exp Level" [(value)]="expLevel">
+        <mat-option value="1">Metro Home Delivery</mat-option>
+        <mat-option value="2">Metro Home Delivery1</mat-option>
+        <mat-option value="3">Metro Home Delivery</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Rank Date" value="09/09/2015">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Comp Type" [(value)]="compType">
+        <mat-option value="1">New Rates</mat-option>
+        <mat-option value="2">New Rates1</mat-option>
+        <mat-option value="3">New Rates2</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Max Racks" value="5">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Min Racks" value="0">
+    </mat-form-field>
+
+    <mat-form-field class="w-50">
+      <mat-label>Description</mat-label>
+      <textarea matInput placeholder="Description" rows="1" cols="50"
+        class="w-100">Renew under new contract changes</textarea>
+    </mat-form-field>
+
+    <mat-form-field class="w-50">
+      <mat-label>Reason for Amendment or Contract Change</mat-label>
+      <textarea matInput placeholder="Reason for Amendment or Contract Change" rows="1" cols="50"
+        class="w-100">Renew under new contract changes</textarea>
+    </mat-form-field>
+
+    <mat-card class="border border-secondary w-75">
+      <mat-card-content>
+        <mat-form-field class="w-25" appearance="fill">
+          <mat-label>Initial Bond Deposit or Current Required Bond</mat-label>
+          <input matInput placeholder="Initial Deposit" value="25,402.83">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Initial Deposit" value="25,402.83">
+        </mat-form-field>
+
+        <mat-form-field class="w-25" appearance="fill">
+          <mat-label>Additional Bond Deposit</mat-label>
+          <input matInput placeholder="Additional Bond Deposit" value="150.63">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Additional Bond Deposit" value="150.63">
+        </mat-form-field>
+
+        <mat-form-field class="w-25" appearance="fill">
+          <mat-label>Total Bond to be Deposited</mat-label>
+          <input matInput placeholder="Total Bond to be Deposited" value="250,402.83">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Total Bond to be Deposited" value="250,402.83">
+        </mat-form-field>
+
+        <mat-form-field class="w-25" appearance="fill">
+          <mat-label>Optional Performance and Payment Bond</mat-label>
+          <input matInput placeholder="Optional Performance and Payment Bond" value="150.63">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Optional Performance and Payment Bond" value="150.63">
+        </mat-form-field>
+
+        <mat-form-field class="w-25" appearance="fill">
+          <mat-label>Maximum SBT Variance %</mat-label>
+          <input matInput placeholder="Maximum SBT Variance %" value="8">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Maximum SBT Variance %" value="8">
+        </mat-form-field>
+
+      </mat-card-content>
+    </mat-card>
+
+  </mat-expansion-panel>
+</mat-accordion>

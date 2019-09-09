@@ -1,0 +1,209 @@
+.btn{
+  outline: none !important;
+}
+
+.btn {
+  //height: ;
+  position: relative;
+}
+
+.btn-lg {
+  height: 60px;
+  padding: 15px 25px;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.btn-sm {
+  height: 30px;
+}
+
+.btn-success {
+  background-color: $green;
+  border-color: $green;
+}
+
+.btnBlue{
+  background-color: $blue-light;
+  border-color: $blue-light;
+  color: white;
+}
+
+.btnBlue-outline{
+  background-color: transparent;
+  color: $blue-light;
+  border-color: $blue-light;
+}
+
+.btnBlue-outline:hover{
+  background-color: $blue-light;
+  color: white;
+  border-color: $blue-light;
+}
+
+.btnBlue-outline.active{
+  background-color: $blue-light;
+  color: white;
+  border-color: $blue-light;
+}
+
+.btn-success:active,
+.btn-success.active,
+.btn-success:hover,
+.btn-success:active:hover,
+.btn-success:active:focus,
+.btn-success:active.focus,
+.btn-success.active:hover,
+.btn-success.active:focus,
+.btn-success.active.focus,
+.btn-success:focus,
+.btn-success.focus,
+.open > .btn-success.dropdown-toggle:hover,
+.open > .btn-success.dropdown-toggle:focus,
+.open > .btn-success.dropdown-toggle.focus,
+.btn-success-outline:active,
+.btn-success-outline.active,
+.btn-success-outline:hover,
+.btn-success-outline:active:hover,
+.btn-success-outline:active:focus,
+.btn-success-outline:active.focus,
+.btn-success-outline.active:hover,
+.btn-success-outline.active:focus,
+.btn-success-outline.active.focus,
+.btn-success-outline:focus,
+.btn-success-outline.focus,
+.open > .btn-success-outline.dropdown-toggle:hover,
+.open > .btn-success-outline.dropdown-toggle:focus,
+.open > .btn-success-outline.dropdown-toggle.focus {
+  color: $white;
+  background-color: $green-dark;
+  border-color: $green;
+}
+
+.button-secondary{
+  border-color: $grey;
+}
+
+.btn-choose:hover {
+  color: white;
+  background-color:rgb(227, 81, 35);
+  border-color: rgb(227, 81, 35);
+}
+
+.btn-choose {
+  border-radius: 0px;
+  border-color: rgb(227, 81, 35);
+  color: rgb(227, 81, 35);
+  background-color: transparent;
+}
+
+.button-row{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.btn-secondary{
+  background-color: $blue;
+  border-color: $blue;
+  color: white;
+}
+
+.btn-secondary:hover{
+  background-color: $blue-dark;
+  border-color: $blue-dark;
+  color: white;
+}
+
+.btn-arrow{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #afafaf;
+  border-radius: 3px;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #c9c9c9 0%,#ededed 100%);
+  text-align: center;
+}
+
+.page-label{
+  display: inline-block;
+  margin: 0 10px;
+  cursor: default;
+}
+
+// loading spinner
+
+$loadingSpinnerDiameter: 28px;
+$loadingSpinnerStrokeWidth: 4px;
+$loadingSpinnerStrokeColor: #FFF;
+$loadingSpinnerOpacity: 1;
+$loadingSpinnerStrokeStyle: solid; // solid, dashed, dotted
+$loadingSpinnerSpeed: .7s;
+
+.loadingSpinner {
+  border: $loadingSpinnerStrokeWidth $loadingSpinnerStrokeStyle $loadingSpinnerStrokeColor;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  width: $loadingSpinnerDiameter - ($loadingSpinnerStrokeWidth * 2);
+  height: $loadingSpinnerDiameter - ($loadingSpinnerStrokeWidth * 2);
+  opacity: $loadingSpinnerOpacity;
+  border-radius: 50%;
+  animation: loadingSpinner $loadingSpinnerSpeed infinite linear;
+  -webkit-animation: loadingSpinner $loadingSpinnerSpeed infinite linear;
+}
+
+.btn .loadingSpinner {
+  margin-top: -$loadingSpinnerDiameter / 2.5;
+  margin-left: -$loadingSpinnerDiameter / 2.5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.btn.spinning span{
+  opacity: 0;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  max-width: 80%;
+  white-space: nowrap;
+  padding: .625rem 1.25rem;
+  color: white;
+  background-color: $navy-light;
+  display: inline-block;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: $navy-dark;
+}
+
+.inputfile + label svg {
+  fill: white;
+}
+
+@keyframes loadingSpinner {
+    from { transform: rotate(0deg)   }
+    to   { transform: rotate(360deg) }
+}
+
+@-webkit-keyframes loadingSpinner {
+    from { -webkit-transform: rotate(0deg)   }
+    to   { -webkit-transform: rotate(360deg) }
+}

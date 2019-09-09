@@ -1,0 +1,66 @@
+
+$white: #FFFFFF;
+$black: #000000;
+
+$gray-darker: #2F2F2F;
+$gray-dark: #717171;
+$gray-base: #828282;
+$gray: #c3c3c3;
+$gray-light: #e3e3e3;
+$gray-lighter: #F2F2F2;
+
+$grey-darker: $gray-darker;
+$grey-dark: $gray-dark;
+$grey-base: $gray-base;
+$grey: $gray;
+$grey-light: $gray-light;
+$grey-lighter: $gray-lighter;
+
+$red-dark: #e74b3b;
+$red: #E25252;
+$red-light: #e35959;
+
+$orange: #f5a623;
+
+$olive-dark: #d2df58;
+$olive: #d8e562;
+$olive-dark: #e9e879;
+
+$green-dark: #4eb86e;
+$green: #5FC17C;
+$green-light: #6bce89;
+
+$blue-dark: #3a96d2;
+$blue: #46a1dc;
+$blue-light: #5eb3eb;
+
+$navy-dark: #2D3E4A;
+$navy: #3e5364;
+$navy-light: #4f6679;
+
+$purple-dark: #674273;
+$purple: #6d477a;
+$purple-light: #816696;
+
+$color-background: $gray-lighter;
+$color-text: $navy-dark;
+$color-primary: $navy-dark;
+$color-background-shade: $navy-light;
+$color-highlight: $green;
+
+$navbar-background: $color-primary;
+$navbar-background-focus: $color-background-shade;
+$navbar-text: $gray-lighter;
+
+$navbar-background-dev: $red-dark;
+
+
+html{
+  padding: 0;
+  margin: 0;
+}
+body{
+  padding: 0;
+  margin: 0;
+  background-color: rgb(95, 193, 124);
+}

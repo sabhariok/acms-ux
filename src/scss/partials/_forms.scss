@@ -1,0 +1,486 @@
+@media screen and (min-width: 480px) {
+	.padded-form{
+		padding: 2vh 2vw;
+	}
+}
+
+$input-height : 2.4em;
+$border-radius : 0.4em;
+
+/* Table Attributes */
+
+.error{
+	color: red;
+}
+
+.paddingTable{
+	
+	th{
+		padding: 10px;
+	}
+}
+
+.reusableMarker{
+	margin-bottom: 0;
+	position: absolute;
+	top: 0px;
+	right: 15px;
+	color: red;
+	cursor: pointer;
+}
+
+.tableButton{
+  position: relative;
+  top: 5px;
+  margin-bottom: 10px;
+}
+
+.table-container{
+  margin-right: .8em;
+  margin-left: .8em;
+  margin-top: .8em;
+}
+
+.updateForm{
+  margin-bottom: 1em;
+}
+
+.input-error{
+  color: $red;
+  border-color: $red;
+}
+
+.input-success{
+  border-color: $green;
+}
+
+.good-input{
+  color: $green;
+}
+
+.bad-input{
+  color: red;
+}
+
+.payment-radio-container{
+	float: left;
+	clear: left;
+}
+
+.custom-control {
+    position: relative;
+    display: inline-block;
+    padding-left: 1.5rem;
+    cursor: pointer;
+		clear: left;
+		float: left;
+}
+
+input, select, textarea, .form-control {
+	outline: none !important;
+	border-radius: $border-radius;
+	font-size: 1em;
+	padding: .4em;
+	border-color: $gray;
+}
+
+input, select, span.form-control, div.form-control {
+	height: $input-height;
+}
+
+input:active, input:focus, select:focus, textarea:focus, .form-control:focus {
+	box-shadow: 0.15em 0.25em .75em 0.10em $gray !important;
+	border-color: $gray !important;
+	outline: none !important;
+}
+
+input[type="checkbox"]:active, input[type="radio"]:active, input[type="checkbox"]:focus, input[type="radio"]:focus{
+	box-shadow: none !important;
+}
+
+label {
+	display: block;
+	margin-bottom: 0;
+	font-weight: bold;
+	font-size: .95em;
+}
+
+label + * {
+	margin-left: .2em;
+}
+
+datepicker {
+	font-size: 1em;
+}
+
+.form .row, form .row {
+  padding: 0 1em 1em;
+}
+
+.form .row div button, form .row div button, .mt14{
+  margin-top: 1.4em;
+}
+
+
+.crud-table .row {
+    padding-bottom: .3em;
+		margin-bottom: .3em;
+}
+
+.crud-table .row.table-head {
+	background-color: $navy-dark;
+	color: $white;
+	line-height: 2.6em;
+	vertical-align: middle;
+	border-radius: 5px;
+}
+
+.crud-table .row.selectable {
+	background-color: $white;
+	color: $gray-darker;
+	line-height: 2.4em;
+	vertical-align: middle;
+	border-radius: 5px;
+	border: 1px solid $gray;
+	cursor: pointer;
+}
+
+.crud-table .row.selectable:hover {
+	box-shadow: .2em .2em rgba(0,0,0,.1);
+}
+
+.crud-table .row.selectable ~ .row {
+	border-radius: 5px;
+}
+
+.crud-table .row.pending {
+	background-color: $olive-dark;
+}
+
+.crud-table .row.pending ~ .row {
+	background-color: $white !important;
+}
+
+.crud-table .row ~ .row.excluded{
+	background-color: $red-light !important;
+	color: $white;
+}
+
+.select-container, .comboContainer{
+	position: relative;
+}
+
+.select-container:after {
+	background: $white;
+  content: ' ';
+  height: $input-height;
+  width: $input-height;
+  position: absolute;
+	top: 0;
+	right: 0;
+  pointer-events: none;
+	z-index: 1;
+	border: solid 1px $gray;
+	border-left: none;
+	border-radius: 0 $border-radius $border-radius 0;
+	border-left: none;
+}
+
+.select-container:before {
+	background: url(/images/down_arrow.svg) 50%/1.6em no-repeat transparent;
+  content: ' ';
+  height: $input-height;
+  width: $input-height;
+  position: absolute;
+	top: 0;
+	right: 0;
+  pointer-events: none;
+	z-index: 2;
+  filter: contrast(50%) sepia(52%) hue-rotate(-188deg);
+}
+
+.noSelect{
+	background: $white !important;
+}
+
+.noSelect:before{
+	background: $white !important;
+}
+
+.mar-radio{
+        margin-top: -.3rem;
+}
+.comboContainer:after {
+	background: $white;
+  content: ' ';
+  height: $input-height;
+  width: $input-height;
+  position: absolute;
+	top: 0;
+	right: 0;
+    cursor: pointer;
+	z-index: 1;
+	border: solid 1px $gray;
+	border-radius: 0 $border-radius $border-radius 0;
+}
+.overInput{
+	position: absolute;
+	top: 0;
+	width: 87%;
+	border-right: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.overInput:focus{
+	box-shadow: none !important;
+}
+
+.dropDownArrow{
+	background: url(/images/down_arrow.svg) 50%/1.6em no-repeat transparent;
+  content: ' ';
+  height: $input-height;
+  width: $input-height;
+  position: absolute;
+	top: 0;
+	right: 0;
+  cursor: pointer;
+	z-index: 2;
+  filter: contrast(50%) sepia(52%) hue-rotate(-188deg);
+}
+
+//Internet Explorer thing for select arrow
+select::-ms-expand {
+    display: none;
+}
+//Internet Explorer thing for selected item
+select::-ms-value {
+    background: transparent;
+		color: $color-text;
+}
+
+.predefined-input {
+    border: solid 1px $gray-dark;
+		cursor: not-allowed;
+}
+
+.odd {
+  background-color: $white;
+}
+
+.even {
+  background-color: $gray-light;
+}
+
+.crud-table .row.even {
+	border-radius: 0.4em;
+}
+
+.cell-alert{
+	font-weight: bold;
+}
+
+.superscript{
+	vertical-align: top;
+	font-size: .8em;
+}
+
+datepicker::before, datepicker:before {
+	display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+	position: absolute;
+	right: .6em;
+	top: .6em;
+	color: $blue;
+	pointer-events: none;
+	content: "\f073";
+}
+
+.createModal{
+	input,select{
+		margin-bottom: 10px;
+	}
+}
+
+.conversionRequest{
+	display: flex;
+	margin-bottom: 15px;
+	background-color: white;
+	border: 1px solid $gray;
+	border-radius: 10px;
+	max-width: 1510px;
+
+	div{
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+
+	.check{
+		height: 14px;
+	}
+
+	input,select{
+		margin-bottom: 10px;
+	}
+
+	.radioContainer{
+		position: relative;
+		top: 15px;
+
+		input{
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.inputs{
+	margin-top: 15px;
+
+	input,select:first-child{
+
+	}
+
+	input, select{
+		margin-bottom: 15px;
+	}
+}
+
+.oe-container {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 20px 40px 250px 40px;
+
+  h2, h3 {
+    font-family: $dosis;
+  }
+
+  .fa-info-circle {
+    margin-left: 15px;
+    cursor: pointer;
+    color: $blue;
+    font-size: 18px;
+  }
+
+  .field-row {
+    margin-bottom: 20px;
+  }
+
+	// .fa {
+	// 	color: $blue;
+	// }
+
+	.fa:hover {
+		cursor: pointer;
+	}
+
+	.fa-trash-o{
+		cursor: pointer;
+	}
+
+	.price-display {
+		background: white;
+		width: 95%;
+		height: 6em;
+		border-radius: 5px;
+	}
+
+	.price-display p{
+		color: $gray-dark;
+		font-size: 2.5em;
+		padding-top: .5em;
+	}
+
+}
+
+.sub-header{
+	padding-top: 60px;
+}
+
+.modal-body{
+	input,select,textarea{
+		margin-bottom: 10px;
+	}
+}
+
+.quantity-select {
+	width: 50px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+label.btn span{
+  font-size: .75em;
+}
+
+label input[type="radio"] ~ i.fa.fa-circle-o{
+    color: #c8c8c8;
+    display: inline;
+		font-size: 1.5em;
+}
+
+label input[type="radio"] ~ i.fa.fa-dot-circle-o{
+    display: none;
+}
+
+label input[type="radio"]:checked ~ i.fa.fa-circle-o{
+    display: none;
+}
+
+label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o{
+    color: $green;
+		display: inline;
+		font-size: 1.5em;
+}
+
+label:hover input[type="radio"] ~ i.fa {
+color: $green;
+}
+
+.secondary-option .fa-trash-o{
+	position: relative;
+	top: .75em;
+	cursor: pointer;
+}
+
+.oe-form .row {
+	padding: 0em;
+}
+
+h3 .fa-trash-o {
+	font-size: 1em;
+	margin-left: 20px;
+}
+
+.plan-container select{
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+	background-color: rgb(242, 242, 242)!important;
+	padding-left: 0px;
+	margin-left: .2em;
+}
+
+.plan-container select:hover{
+	cursor: default;
+}
+
+.table-input {
+	border: 1px solid #ccc;
+}
+
+.info-box{
+	border: 1px solid $gray-light;
+	background-color: white;
+}
+
+.info-box p{
+	margin-top: .5rem;
+	margin-bottom: 0rem;
+}
